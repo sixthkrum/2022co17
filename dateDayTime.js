@@ -6,4 +6,5 @@ function updateDate(){
   document.getElementById("dateDayTime").innerHTML = dayStrings[dayIndex] + "\t" + date.toLocaleString();
 }
 
+updateDate();
 setInterval(updateDate, 1000);
