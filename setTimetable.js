@@ -19,7 +19,7 @@ var tuesdayTimetable = [
 
 var wednesdayTimetable = [
   ["08:00", "UCS415 Design and Analysis of Algorithms lecture", [["csed7", "https://tiet.zoom.us/my/csed7"]]],
-  ["08:50", "Core Electives group-1 lecture", [["links", "links"]]],
+  ["08:50", "Core Electives group-1 lecture", [["-", ""]]],
   ["09:40", "UCS521 Artificial Intelligence lecture", [["csed7", "https://tiet.zoom.us/my/csed7"]]],
   ["10:30", "UCS521 Artificial Intelligence practical", [["csed15", "https://tiet.zoom.us/my/csed15"]]],
   ["13:00", "General Elective lecture", [["Cyber Security csed2", "https://tiet.zoom.us/my/csed2"]]],
@@ -40,12 +40,12 @@ var fridayTimetable = [
   ["09:40", "Core Electives group-2 lecture", [["Data Structures csed9", "https://tiet.zoom.us/my/csed9"]]],
   ["10:30", "UCS507 Computer Architecture and Organization lecture", [["csed3", "https://tiet.zoom.us/my/csed3"]]],
   ["11:20", "UCS521 Artificial Intelligence lecture", [["csed6", "https://tiet.zoom.us/my/csed6"]]],
-  ["16:20", "Core Electives group-2 lab", [["links", "links"]]]
+  ["16:20", "Core Electives group-2 lab", [["-", ""]]]
 ];
 
 var saturdayTimetable = [
   ["08:00", "UCS523/UCS_EL1_67 practical", [["Data Structures csed3", "https://tiet.zoom.us/my/csed3"]]],
-  ["10:30", "UCS_EL1_5 practical", [["links", "links"]]],
+  ["10:30", "UCS_EL1_5 practical", [["-", ""]]],
   ["12:10", "General Electives lecture", [["Cyber Security csed2", "https://tiet.zoom.us/my/csed2"]]],
   ["15:30", "UCS415 Design and Analysis of Algorithms practical", [["csed8", "https://tiet.zoom.us/my/csed8"]]]
 ];
