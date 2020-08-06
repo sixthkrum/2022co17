@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- Bootstrap -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
     <title> TIMETABLE </title>
   </head>
 
   <body>
-    <h1> Time table </h1>
+    <h1> Today's timetable for 3co17 </h1>
 
-    <a href = "https://www.thapar.edu/misces/latestpages/final-time-table-for-online-classes-july-to-dec-2020"> Download time table at thapar.edu </a>
+    <a href = "https://www.thapar.edu/misces/latestpages/final-time-table-for-online-classes-july-to-dec-2020"> Download timetable at thapar.edu </a>
 
     <p>
       <span id = "dateDayTime" ></span>
     </p>
 
-    <table id = "timeTable">
-      <tr>
-        <th> Time </th>
-        <th> Subject </th>
-        <th> Link </th>
-      </tr>
-    </table>
+    <div class = "container">
+      <table class="table" id = "timetable">
+        <thead>
+          <tr>
+            <th> Time </th>
+            <th> Subject </th>
+            <th> Link </th>
+          </tr>
+        </thead>
+      </table>
+    </div>
 
     <script src = "dateDayTime.js" ></script>
-    <script src = "setTimeTable.js"></script>
+    <script src = "setTimetable.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
   </body>
 </html>
