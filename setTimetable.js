@@ -56,7 +56,7 @@ var today = new Date().getDay();
 
 var TimetableInDoc = document.getElementById("timetable")
 
-TimetableEntries[1].forEach(setRowEntries);
+TimetableEntries[today].forEach(setRowEntries);
 
 function setRowEntries( slotEntry ) {
   var newTimeSlot = TimetableInDoc.insertRow(-1);
