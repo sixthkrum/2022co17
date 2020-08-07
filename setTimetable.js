@@ -70,8 +70,6 @@ function setRowEntries( slotEntry ) {
 
   slotEntry[2].forEach(addHyperLinksToCol);
 
-  var breakTag = document.createElement("br");
-
   function addHyperLinksToCol( link ){
     var anchor = document.createElement('a');
     var anchorLink = document.createTextNode(link[0]);
