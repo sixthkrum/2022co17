@@ -1,9 +1,10 @@
 var dayStrings = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 function updateDate(){
-  var date = new Date();
-  var dayIndex = date.getDay();
-  document.getElementById("dateDayTime").innerHTML = dayStrings[dayIndex] + "\t" + date.toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+  var dateIST = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+  var fixedDateIST = new Date(dateIST);
+  var dayIndex = fixedDateIST.getDay();
+  document.getElementById("dateDayTime").innerHTML = dayStrings[dayIndex] + "\t" + fixedDateIST.toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
 }
 
 updateDate();
