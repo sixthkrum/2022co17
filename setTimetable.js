@@ -3,7 +3,7 @@ var sundayTimetable = [
 ];
 
 var mondayTimetable = [
-  ["08:00", "General Elective lecture", [["Cyber Security csed1", "https://tiet.zoom.us/my/csed1"]]],
+  ["08:00", "General Elective lecture", [["[Cyber Security csed1]", "https://tiet.zoom.us/my/csed1"]]],
   ["11:20", "UCS507 Computer Architecture and Organization lab", [["csed13", "https://tiet.zoom.us/my/csed13"]]],
   ["13:50", "UCS701 Theory Of Computation lecture", [["csed2", "https://tiet.zoom.us/my/csed2"]]],
   ["14:40", "UCS503 Software Engineering lecture", [["csed2", "https://tiet.zoom.us/my/csed2"]]],
@@ -29,7 +29,7 @@ var wednesdayTimetable = [
 var thursdayTimetable = [
   ["08:00", "UCS507 Computer Architecture and Organization lecture", [["csed6", "https://tiet.zoom.us/my/csed6"]]],
   ["08:50", "UCS701 Theory Of Computation lecture", [["csed5", "https://tiet.zoom.us/my/csed5"]]],
-  ["09:40", "Core Electives group-2 lecture", [["Data Structures csed9", "https://tiet.zoom.us/my/csed9"]]],
+  ["09:40", "Core Electives group-2 lecture", [["[Data Science csed9]", "https://tiet.zoom.us/my/csed9"]]],
   ["10:30", "UCS701 Theory Of Computation tutorial", [["csed9", "https://tiet.zoom.us/my/csed9"]]],
   ["13:50", "UCS521 Artificial Intelligence lecture", [["csed13", "https://tiet.zoom.us/my/csed13"]]],
   ["14:40", "UCS415 Design and Analysis of Algorithms lecture", [["csed6", "https://tiet.zoom.us/my/csed6"]]],
@@ -37,29 +37,29 @@ var thursdayTimetable = [
 ];
 
 var fridayTimetable = [
-  ["09:40", "Core Electives group-2 lecture", [["Data Structures csed9", "https://tiet.zoom.us/my/csed9"]]],
+  ["09:40", "Core Electives group-2 lecture", [["[Data Science csed9]", "https://tiet.zoom.us/my/csed9"]]],
   ["10:30", "UCS507 Computer Architecture and Organization lecture", [["csed3", "https://tiet.zoom.us/my/csed3"]]],
   ["11:20", "UCS521 Artificial Intelligence lecture", [["csed6", "https://tiet.zoom.us/my/csed6"]]],
   ["16:20", "Core Electives group-1 lab", [["-", ""]]]
 ];
 
 var saturdayTimetable = [
-  ["08:00", "UCS523/UCS_EL1_67 practical", [["Data Structures csed3", "https://tiet.zoom.us/my/csed3"]]],
+  ["08:00", "UCS523/UCS_EL1_67 practical", [["[Data Science csed3]", "https://tiet.zoom.us/my/csed3"]]],
   ["10:30", "UCS_EL1_5 practical", [["-", ""]]],
-  ["12:10", "General Electives lecture", [["Cyber Security csed2", "https://tiet.zoom.us/my/csed2"]]],
+  ["12:10", "General Electives lecture", [["[Cyber Security csed2]", "https://tiet.zoom.us/my/csed2"]]],
   ["15:30", "UCS415 Design and Analysis of Algorithms practical", [["csed8", "https://tiet.zoom.us/my/csed8"]]]
 ];
 
-var TimetableEntries = [ sundayTimetable, mondayTimetable, tuesdayTimetable, wednesdayTimetable, thursdayTimetable, fridayTimetable, saturdayTimetable];
+var timetableEntries = [ sundayTimetable, mondayTimetable, tuesdayTimetable, wednesdayTimetable, thursdayTimetable, fridayTimetable, saturdayTimetable];
 
 var today = new Date().getDay();
 
-var TimetableInDoc = document.getElementById("timetable")
+var timetableInDoc = document.getElementById("timetable")
 
-TimetableEntries[today].forEach(setRowEntries);
+timetableEntries[today].forEach(setRowEntries);
 
 function setRowEntries( slotEntry ) {
-  var newTimeSlot = TimetableInDoc.insertRow(-1);
+  var newTimeSlot = timetableInDoc.insertRow(-1);
   var i;
 
   for( i = 0; i < 2; i ++){
