@@ -1,5 +1,22 @@
+//real time clock
+
+var dayStrings = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var dayIndex;
+
+function updateDate(){
+  var dateIST = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+  var fixedDateIST = new Date(dateIST);
+  dayIndex = fixedDateIST.getDay();
+  document.getElementById("dateDayTime").innerHTML = dayStrings[dayIndex] + "\t" + fixedDateIST.toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+}
+
+updateDate();
+setInterval(updateDate, 1000);
+
+//timetable setting
+
 var sundayTimetable = [
-  ["-", "-", "-"]
+  ["-", "-", [["-", ""]]]
 ];
 
 var mondayTimetable = [
@@ -52,11 +69,9 @@ var saturdayTimetable = [
 
 var timetableEntries = [ sundayTimetable, mondayTimetable, tuesdayTimetable, wednesdayTimetable, thursdayTimetable, fridayTimetable, saturdayTimetable];
 
-var today = new Date().getDay();
-
 var timetableInDoc = document.getElementById("timetable")
 
-timetableEntries[today].forEach(setRowEntries);
+timetableEntries[dayIndex].forEach(setRowEntries);
 
 function setRowEntries( slotEntry ) {
   var newTimeSlot = timetableInDoc.insertRow(-1);
@@ -78,4 +93,22 @@ function setRowEntries( slotEntry ) {
     anchor.href = link[1];
     linksColumn.appendChild(anchor);
   }
+}
+
+
+//timetable slider
+
+var timetableDayIndex = dayIndex;
+
+document.getElementById("daySlider").innerHTML = dayStrings[timetableDayIndex];
+
+document.getElementById("lSlider").onclick = function() { changeDay(-1); };
+
+document.getElementById("rSlider").onclick = function() { changeDay(1); };
+
+function changeDay( delta ){
+  document.getElementById("timetable").innerHTML = "<thead><tr><th> Time </th><th> Subject </th><th> Link </th></tr></thead>"; 
+  timetableDayIndex = (timetableDayIndex + delta + 7) % 7;
+  document.getElementById("daySlider").innerHTML = dayStrings[timetableDayIndex];
+  timetableEntries[timetableDayIndex].forEach(setRowEntries);
 }
