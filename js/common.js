@@ -20,7 +20,7 @@ var sundayTimetable = [
 ];
 
 var mondayTimetable = [
-  ["08:00", "General Elective lecture", [["[Cyber Security csed1]", "https://tiet.zoom.us/my/csed1"]]],
+  ["08:00", "General Elective lecture", [["[Cyber Security csed1]", "https://tiet.zoom.us/my/csed1"], ["[Graph Theory tietsom7]", "https://tiet.zoom.us/my/tietsom7"]]],
   ["11:20", "UCS507 Computer Architecture and Organization lab", [["csed13", "https://tiet.zoom.us/my/csed13"]]],
   ["13:50", "UCS701 Theory Of Computation lecture", [["csed2", "https://tiet.zoom.us/my/csed2"]]],
   ["14:40", "UCS503 Software Engineering lecture", [["csed2", "https://tiet.zoom.us/my/csed2"]]],
@@ -39,7 +39,7 @@ var wednesdayTimetable = [
   ["08:50", "Core Electives group-1 lecture", [["-", ""]]],
   ["09:40", "UCS521 Artificial Intelligence lecture", [["csed7", "https://tiet.zoom.us/my/csed7"]]],
   ["10:30", "UCS521 Artificial Intelligence practical", [["csed15", "https://tiet.zoom.us/my/csed15"]]],
-  ["13:00", "General Elective lecture", [["Cyber Security csed2", "https://tiet.zoom.us/my/csed2"]]],
+  ["13:00", "General Elective lecture", [["[Cyber Security csed2]", "https://tiet.zoom.us/my/csed2"], ["[Graph Theory tietsom7]", "https://tiet.zoom.us/my/tietsom7"]]],
   ["16:20", "UCS503 Software Engineering practical", [["csed12", "https://tiet.zoom.us/my/csed12"]]]
 ];
 
@@ -63,7 +63,7 @@ var fridayTimetable = [
 var saturdayTimetable = [
   ["08:00", "UCS523/UCS_EL1_67 practical", [["[Data Science csed3]", "https://tiet.zoom.us/my/csed3"]]],
   ["10:30", "UCS_EL1_5 practical", [["-", ""]]],
-  ["12:10", "General Electives lecture", [["[Cyber Security csed2]", "https://tiet.zoom.us/my/csed2"]]],
+  ["12:10", "General Electives lecture", [["[Cyber Security csed2]", "https://tiet.zoom.us/my/csed2"], ["[Graph Theory tietsom7]", "https://tiet.zoom.us/my/tietsom7"]]],
   ["15:30", "UCS415 Design and Analysis of Algorithms practical", [["csed8", "https://tiet.zoom.us/my/csed8"]]]
 ];
 
@@ -107,7 +107,7 @@ document.getElementById("lSlider").onclick = function() { changeDay(-1); };
 document.getElementById("rSlider").onclick = function() { changeDay(1); };
 
 function changeDay( delta ){
-  document.getElementById("timetable").innerHTML = "<thead><tr><th> Time </th><th> Subject </th><th> Link </th></tr></thead>"; 
+  document.getElementById("timetable").innerHTML = "<thead><tr><th> Time </th><th> Subject </th><th> Link </th></tr></thead>";
   timetableDayIndex = (timetableDayIndex + delta + 7) % 7;
   document.getElementById("daySlider").innerHTML = dayStrings[timetableDayIndex];
   timetableEntries[timetableDayIndex].forEach(setRowEntries);
