@@ -23,7 +23,7 @@ var mondayTimetable = [
   ["08:00", "General Elective lecture", [["[Cyber Security csed1]", "https://tiet.zoom.us/my/csed1"], ["[Graph Theory tietsom7]", "https://tiet.zoom.us/my/tietsom7"]]],
   ["11:20", "UCS507 Computer Architecture and Organization lab", [["csed13", "https://tiet.zoom.us/my/csed13"]]],
   ["13:50", "UCS701 Theory Of Computation lecture", [["csed2", "https://tiet.zoom.us/my/csed2"]]],
-  ["14:40", "UCS503 Software Engineering lecture", [["csed2", "https://tiet.zoom.us/my/csed2"]]],
+  ["14:40", "UCS503 Software Engineering lecture", [["csed14", "https://tiet.zoom.us/my/csed14"]]],
   ["15:30", "UCS507 Computer Architecture and Organization lecture", [["csed6", "https://tiet.zoom.us/my/csed6"]]]
 ];
 
