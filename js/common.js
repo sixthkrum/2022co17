@@ -30,7 +30,7 @@ var mondayTimetable = [
 var tuesdayTimetable = [
   ["08:00", "UCS701 Theory of Computation lecture", [["csed6", "https://tiet.zoom.us/my/csed6"]]],
   ["08:50", "Core Elective group-1 lecture", [["-", ""]]],
-  ["13:00", "UCS503 Software Engineering lecture", [["csed14", "https://tiet.zoom.us/my/csed10"]]],
+  ["13:00", "UCS503 Software Engineering lecture", [["csed10", "https://tiet.zoom.us/my/csed10"]]],
   ["13:50", "UCS415 Design and Analysis of Algorithms lecture", [["csed10", "https://tiet.zoom.us/my/csed10"]]]
 ];
 
